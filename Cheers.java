@@ -18,7 +18,7 @@ public class Cheers {
             for (int i = 0; i < length; i++) {
                 char c = upperCaseInput.charAt(i);
                 if (anLetters.indexOf(c) == -1) {
-                        a_an = "a ";
+                        a_an = "a  ";
                 } else {
                         a_an = "an ";
                 }
