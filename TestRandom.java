@@ -5,7 +5,7 @@ public  class  TestRandom {
 		double bigger = 0;
 		double smaller = 0;
 
-	    for (int i = 0; i <= N; i++) {
+	    for (int i = 0; i < N; i++) {
 			double random = Math.random();
 
 			if (random > 0.5) {
@@ -15,10 +15,12 @@ public  class  TestRandom {
 			}
 		}
 
-		double ratio = bigger / smaller;
-			
 		System.out.println("> 0.5: " + bigger);
 		System.out.println("<= 0.5: " + smaller);
-		System.out.println(ratio);
+
+		if (smaller > 0) {
+			double ratio = (double) bigger / smaller;
+			System.out.println(ratio);
+		}
 	}
 }
